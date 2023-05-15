@@ -22,37 +22,37 @@
 }
 
 .one{
-	background-color: rgb(133, 164, 255);
+	
 	grid-area: one;
 }
 
 .two{
-	background-color: grey;
+	
 	grid-area: two;
 }
 
 .three{
-	background-color: rgb(84, 68, 166);
+	
 	grid-area: three;
 }
 
 .four{
-	background-color: rgb(112, 114, 216);
+	
 	grid-area: four;
 }
 
 .five{
-	background-color: rgb(20, 141, 255);
+	
 	grid-area: five;
 }
 
 .six{
-	background-color: rgb(43, 20, 255);
+	
 	grid-area: six;
 }
 
 .seven{
-	background-color: rgb(140, 130, 233);
+	
 	grid-area: seven;
 }
 
@@ -86,7 +86,7 @@ header img{
 @media (min-width:1024px){
 	#contenedor-grid{
 		grid-template-columns: 50vw 25vw 25vw;
-		grid-template-rows: 40vh 50vh 30vh;
+		grid-template-rows: 40vh 60vh 60vh;
 		grid-template-areas: 
 		"one one one" 
 		"two three four" 
@@ -98,3 +98,21 @@ header img{
 		display: none;
 	}
 }
+
+
+.fotoNoticia{
+    width: 300px;
+    height: auto;
+}
+
+.display{
+    display: block;
+    text-align: center;
+    margin: 5px 20px 5px 20px;
+    
+}
+
+#principal{
+    margin-top: 50px;
+}
+
