@@ -25,3 +25,8 @@ header nav ul li a{
 header nav ul li :hover {
     color: blue;
 }
+
+.linkNews {
+    text-decoration: none;
+    color:black;
+}
