@@ -56,37 +56,10 @@
 	grid-area: seven;
 }
 
-header{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-	header ul{
-		display: flex;
-	}
-		header ul li{
-			margin-right: 10px;
-		}		
-
-		header ul li a{
-			color: deeppink;
-			text-decoration: none;
-			font-size: 1.1em;
-		}
-
-header img{
-	width: 230px;
-	margin-top: 20px;
-}
-
-
-
-
 @media (min-width:1024px){
 	#contenedor-grid{
 		grid-template-columns: 50vw 25vw 25vw;
-		grid-template-rows: 40vh 50vh 30vh;
+		grid-template-rows: 25vh 50vh 30vh;
 		grid-template-areas: 
 		"one one one" 
 		"two three four" 

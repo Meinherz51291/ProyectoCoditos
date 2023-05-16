@@ -24,10 +24,6 @@
                              "news1 news2 news3"      
 }
 
-.header {
-    background-color: rgb(77, 183, 183);
-}
-
 .newsPrincipal {
     background-color: rgb(34, 185, 190);
     grid-area: principalNews;
@@ -90,36 +86,6 @@
 
 .footer {
     background-color: rgb(57, 170, 183);
-}
-
-header{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    background-color: rgb(133, 164, 255);
-}
-
-header ul{
-	display: flex;
-}
-
-header ul li{
-	margin-right: 10px;
-}		
-
-header ul li a{
-	color: deeppink;
-	text-decoration: none;
-	font-size: 1.1em;
-}
-
-#LOGO{
-	width: 70%;
-}
-
-#imgPrincipal {
-    height: 80%;
-    width: 80%;
 }
 
 @media all and (min-width:600px) and (max-width:1023px){
