@@ -12,7 +12,7 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(6, 1fr);
-	grid-template-rows: 20vh 67vh 38vh 38vh 33vh 35vh 10vh;
+	grid-template-rows: 20vh 70vh 38vh 38vh 33vh 35vh 10vh;
 	grid-template-areas: 
 	"one"
 	"two" 
@@ -77,7 +77,7 @@
 @media (min-width:1024px){
 	#contenedor-grid{
 		grid-template-columns: 50vw 25vw 25vw;
-		grid-template-rows: 25vh 40vh 40vh;
+		grid-template-rows: 22vh 40vh 40vh;
 		grid-template-areas: 
 		"one one one" 
 		"two three four" 
