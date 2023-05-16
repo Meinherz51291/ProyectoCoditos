@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+
+.grid {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 40vh 30vh 30vh;
+    width: 90%;
+    margin: 0 auto;
+        grid-template-areas:
+                             "principalNews principalNews widgetClima"
+                             "principalNews principalNews widget2"
+                             "news1 news2 news3"
+                             "news1 news2 news3"      
+}
+
+.header {
+    background-color: rgb(77, 183, 183);
+}
+
+.newsPrincipal {
+    background-color: rgb(34, 185, 190);
+    grid-area: principalNews;
+    margin-top: 0.2em;
+}
+
+.news1 {
+    background-color: rgb(160, 184, 53);
+    color: #000;
+    border: none;
+    grid-area: news1;
+    margin-bottom: 0.2em;
+}
+
+.news2 {
+    background-color: rgb(160, 184, 53);
+    color: #000;
+    border: none;
+    grid-area: news2;
+    margin-bottom: 0.2em;
+}
+
+.news3 {
+    background-color: rgb(160, 184, 53);
+    color: #000;
+    border: none;
+    grid-area: news3;
+    margin-bottom: 0.2em;
+}
+
+.news4 {
+    background-color: rgb(160, 184, 53);
+    color: #000;
+    border: none;
+    grid-area: news4;
+    margin-bottom: 1em;
+}
+
+.widgetClima {
+    background-color: rgb(164, 118, 53);
+    grid-area: widgetClima;
+    margin-top: 0.2em;
+}
+
+.widget2 {
+    background-color: rgb(148, 72, 139);
+    grid-area: widget2;
+}
+
+.footer {
+    background-color: rgb(57, 170, 183);
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    background-color: rgb(133, 164, 255);
+}
+
+header ul{
+	display: flex;
+}
+
+header ul li{
+	margin-right: 10px;
+}		
+
+header ul li a{
+	color: deeppink;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+
+#LOGO{
+	width: 70%;
+}
+
+
+@media all and (min-width:600px) and (max-width:1023px){
+    .grid {
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 20vh 40vh 30vh 30vh 30vh;
+        width: 100%;
+        margin: 0 auto;
+            grid-template-areas:
+                                 "widgetClima widget2"
+                                 "principalNews principalNews"
+                                 "principalNews principalNews"
+                                 "news1 news2"
+                                 "news3 news3"      
+    }
+
+    .widgetClima {
+        background-color: rgb(164, 118, 53);
+        grid-area: widgetClima;
+        margin-top: 0.2em;
+    }
+
+    .widget2 {
+        background-color: rgb(148, 72, 139);
+        grid-area: widget2;
+        margin-top: 0.2em;
+    }
+
+    .newsPrincipal {
+        background-color: rgb(34, 185, 190);
+        grid-area: principalNews;
+        margin-top: 0em;
+    }
+
+    .news1 {
+        background-color: rgb(160, 184, 53);
+        color: #000;
+        border: none;
+        grid-area: news1;
+        margin-bottom: 0em;
+    
+    }
+    
+    .news2 {
+        background-color: rgb(160, 184, 53);
+        color: #000;
+        border: none;
+        grid-area: news2;
+        margin-bottom: 0em;
+
+}
+}
+
+@media all and (max-width: 599px) {
+    .grid {
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: repeat(12, 50vw);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: 40vh 20vh 20vh 20vh 20vh;
+        width: 100%;
+            grid-template-areas:
+                                 "principalNews principalNews" 
+                                 "widgetClima widget2"
+                                 "news1 news1"
+                                 "news2 news2"
+                                 "news3 news3"    
+    }
+
+    .widgetClima {
+        background-color: rgb(164, 118, 53);
+        grid-area: widgetClima;
+        margin-top: 0em;
+    }
+
+    .news1 {
+        background-color: rgb(160, 184, 53);
+        color: #000;
+        border: none;
+        grid-area: news1;
+        margin-bottom: 0em;
+    }
+
+    .news2 {
+        background-color: rgb(160, 184, 53);
+        color: #000;
+        border: none;
+        grid-area: news2;
+        margin-bottom: 0em;
+    }
+    
+    .news3 {
+        background-color: rgb(160, 184, 53);
+        color: #000;
+        border: none;
+        grid-area: news3;
+        margin-bottom: 0.2em;
+    }
+}
