@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>codoNoticias</title>
-    <link rel="stylesheet" href="../css/Style.css">
-    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/">
+    <link rel="stylesheet" href="../style/Style.css">
+    <link rel="stylesheet" href="../style/main.css">
 </head>
 <body>
 
@@ -64,8 +64,68 @@
 
     </div>
 
- 
-    <script src="js/Script.js"></script>
-     <script src="../bootstrap-5.2.3-dist/"></script> 
+    <!-- comienza formulario -->
+
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" required>
+          <div class="valid-feedback">
+            Ok!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+            Ok!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Elige un nombre de usuario
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+           Escribe tu ciudad
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Provincia</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Selecciona...</option>
+            <option>...</option>
+          </select>
+          <div class="invalid-feedback">
+           Por favor selecciona una provincia válida
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Estoy de acuerdo con términos y condiciones
+            </label>
+            <div class="invalid-feedback">
+             Primero debe estar de acuerdo con términos y condiciones
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar formulario</button>
+        </div>
+      </form>
+    <!-- termina formulario -->
+    
+    <script src="../js/Script.js"></script>
+
 </body>
 </html>
