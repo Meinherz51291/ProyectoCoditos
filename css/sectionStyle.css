@@ -9,6 +9,7 @@
 }
 
 #contenedor-grid{
+	overflow: hidden;
 	margin: auto;
 	padding: auto;
 	display: grid;
@@ -93,7 +94,16 @@
 	}
 
 	.secondaryImg {
-		width: 70%;
 		height: 60%;
+		border-radius: 0px;
+		-webkit-transition: 0.5s linear;
+		transition: 1s linear
+		
+	}
+
+	.secondaryImg:hover{
+		 border-radius: 20px;
+					 
 	}
 }
+
