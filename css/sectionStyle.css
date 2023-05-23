@@ -9,10 +9,12 @@
 }
 
 #contenedor-grid{
+	margin: auto;
+	padding: auto;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(6, 1fr);
-	grid-template-rows: 20vh 70vh 38vh 38vh 33vh 35vh 10vh;
+	grid-template-rows: repeat(7, auto);
 	grid-template-areas: 
 	"one"
 	"two" 
@@ -25,12 +27,13 @@
 }
 
 .one{
-	background-color: rgb(133, 164, 255);
+	
 	grid-area: one;
+	padding-bottom: 20px;
 }
 
 .two{
-	background-color: grey;
+	margin: 10px;
 	grid-area: two;
 	text-align: center;
 }
@@ -42,31 +45,31 @@
 }
 
 .three{
-	background-color: rgb(84, 68, 166);
+	margin: 10px;
 	grid-area: three;
 	text-align: center;
 }
 
 .four{
-	background-color: rgb(112, 114, 216);
+	margin: 10px;
 	grid-area: four;
 	text-align: center;
 }
 
 .five{
-	background-color: rgb(20, 141, 255);
+	margin: 10px;
 	grid-area: five;
 	text-align: center;
 }
 
 .six{
-	background-color: rgb(43, 20, 255);
+	margin: 10px;
 	grid-area: six;
 	text-align: center;
 }
 
 .seven{
-	background-color: rgb(140, 130, 233);
+	
 	grid-area: seven;
 }
 
@@ -77,7 +80,7 @@
 @media (min-width:1024px){
 	#contenedor-grid{
 		grid-template-columns: 50vw 25vw 25vw;
-		grid-template-rows: 22vh 40vh 40vh;
+		grid-template-rows: 25vh 60vh 60vh;
 		grid-template-areas: 
 		"one one one" 
 		"two three four" 
