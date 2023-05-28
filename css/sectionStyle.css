@@ -37,6 +37,7 @@
 	margin: 10px;
 	grid-area: two;
 	text-align: center;
+	border-style:groove;
 }
 
 .two img {
@@ -49,24 +50,28 @@
 	margin: 10px;
 	grid-area: three;
 	text-align: center;
+	border-style:groove;
 }
 
 .four{
 	margin: 10px;
 	grid-area: four;
 	text-align: center;
+	border-style:groove;
 }
 
 .five{
 	margin: 10px;
 	grid-area: five;
 	text-align: center;
+	border-style:groove;
 }
 
 .six{
 	margin: 10px;
 	grid-area: six;
 	text-align: center;
+	border-style:groove;
 }
 
 .seven{
@@ -81,7 +86,7 @@
 @media (min-width:1024px){
 	#contenedor-grid{
 		grid-template-columns: 50vw 25vw 25vw;
-		grid-template-rows: 25vh 60vh 60vh;
+		grid-template-rows: 16vh 60vh 60vh;
 		grid-template-areas: 
 		"one one one" 
 		"two three four" 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador del clima</title>
+    <link rel="stylesheet" href="./ClimaStyle.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleMenu.css">
+    <script src="./ClimaJs.js" defer></script>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../img/logoCodo2.png" alt="logo codoNoticias">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a> </li>
+                <li><a href="../01-Tecnologia/Tecnologia.html">Tecnologia</a> </li>
+                <li><a href="../02-Sociedad/Sociedad.html">Sociedad</a> </li>
+                <li><a href="../03-Economia/Economia.html">Economia</a> </li>
+                <li><a href="../04-Internacional/Internacional.html">Internacional</a> </li>
+                <li><a href="../Api/Vista-AppClima.html">Clima</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="weather-content">
+        <h1>Clima</h1>
+        <div class="result">
+            <p>Agrege cuidad y pais</p>
+        </div>
+        <form action="" method="POST" class="get-weather">
+            <select name="city" id="city">
+                <option disabled selected value="">Ciudad</option>
+                <option value="Buenos Aires">Buenos Aires (Capital - Buenos Aires)</option>
+                <option value="San Fernando del Valle de Catamarca">San Fernando del Valle de Catamarca (Capital - Catamarca)</option>
+                <option value="Resistencia">Resistencia (Capital - Chaco)</option>
+                <option value="Rawson">Rawson (Capital - Chubut)</option>
+                <option value="Córdoba">Córdoba (Capital - Córdoba)</option>
+                <option value="Corrientes">Corrientes (Capital - Corrientes)</option>
+                <option value="Paraná">Paraná (Capital - Entre Ríos)</option>
+                <option value="Formosa">Formosa (Capital - Formosa)</option>
+                <option value="San Salvador de Jujuy">San Salvador de Jujuy (Capital - Jujuy)</option>
+                <option value="Santa Rosa">Santa Rosa (Capital - La Pampa)</option>
+                <option value="La Rioja">La Rioja (Capital - La Rioja)</option>
+                <option value="Mendoza">Mendoza (Capital - Mendoza)</option>
+                <option value="Posadas">Posadas (Capital - Misiones)</option>
+                <option value="Neuquén">Neuquén (Capital - Neuquén)</option>
+                <option value="Viedma">Viedma (Capital - Río Negro)</option>
+                <option value="Salta">Salta (Capital - Salta)</option>
+                <option value="San Juan">San Juan (Capital - San Juan)</option>
+                <option value="San Luis">San Luis (Capital - San Luis)</option>
+                <option value="Río Gallegos">Río Gallegos (Capital - Santa Cruz)</option>
+                <option value="Santa Fe">Santa Fe (Capital - Santa Fe)</option>
+                <option value="Santiago del Estero">Santiago del Estero (Capital - Santiago del Estero)</option>
+                <option value="Ushuaia">Ushuaia (Capital - Tierra del Fuego)</option>
+                <option value="San Miguel de Tucumán">San Miguel de Tucumán (Capital - Tucumán)</option>
+              </select>
+            
+              <input type="text" name="country" id="country" value="Argentina">
+            <input type="submit" name="" id="" value="Aceptar">
+        </form>
+    </section>
+    
+</body>
+</html>
