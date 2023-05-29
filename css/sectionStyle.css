@@ -86,7 +86,7 @@
 @media (min-width:1024px){
 	#contenedor-grid{
 		grid-template-columns: 50vw 25vw 25vw;
-		grid-template-rows: 16vh 60vh 60vh;
+		grid-template-rows: 16vh 75vh 75vh 10vh;
 		grid-template-areas: 
 		"one one one" 
 		"two three four" 
@@ -99,7 +99,7 @@
 	}
 
 	.secondaryImg {
-		height: 60%;
+		
 		border-radius: 0px;
 		-webkit-transition: 0.5s linear;
 		transition: 1s linear
