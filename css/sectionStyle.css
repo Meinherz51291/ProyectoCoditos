@@ -102,12 +102,14 @@
 		
 		border-radius: 0px;
 		-webkit-transition: 0.5s linear;
-		transition: 1s linear
+		transition: 0.7s linear
+		
 		
 	}
 
 	.secondaryImg:hover{
 		 border-radius: 20px;
+		 -webkit-filter: grayscale(100%);
 					 
 	}
 }
