@@ -14,7 +14,6 @@
 	padding: auto;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(6, 1fr);
 	grid-template-rows: repeat(7, auto);
 	grid-template-areas: 
 	"one"
@@ -31,6 +30,7 @@
 	
 	grid-area: one;
 	padding-bottom: 20px;
+	
 }
 
 .two{
@@ -38,6 +38,7 @@
 	grid-area: two;
 	text-align: center;
 	border-style:groove;
+	background: #8d8787ab;
 }
 
 .two img {
@@ -51,6 +52,7 @@
 	grid-area: three;
 	text-align: center;
 	border-style:groove;
+	background: #8d8787ab;
 }
 
 .four{
@@ -58,6 +60,7 @@
 	grid-area: four;
 	text-align: center;
 	border-style:groove;
+	background: #8d8787ab;
 }
 
 .five{
@@ -65,6 +68,7 @@
 	grid-area: five;
 	text-align: center;
 	border-style:groove;
+	background: #8d8787ab;
 }
 
 .six{
@@ -72,6 +76,7 @@
 	grid-area: six;
 	text-align: center;
 	border-style:groove;
+	background: #8d8787ab;
 }
 
 .seven{
@@ -86,13 +91,13 @@
 @media (min-width:1024px){
 	#contenedor-grid{
 		
-		grid-template-columns: 50vw 25vw 25vw;
-		grid-template-rows: 23vh 75vh 75vh 18vh;
+		grid-template-columns: repeat(4, auto);
+		grid-template-rows: repeat(4, auto);
 		grid-template-areas: 
-		"one one one" 
-		"two three four" 
-		"two five six"
-        "seven seven seven";
+		"one one one one" 
+		"two two three four" 
+		"two two five six"
+        "seven seven seven seven";
 	}
 
 	header ul{
@@ -102,7 +107,6 @@
 	.secondaryImg {
 		
 		border-radius: 0px;
-		-webkit-transition: 0.5s linear;
 		transition: 0.7s linear
 		
 	}
@@ -110,7 +114,6 @@
 	.secondaryImg:hover{
 		 border-radius: 20px;
 		 -webkit-filter: grayscale(100%);
-					 
 	}
 }
 
