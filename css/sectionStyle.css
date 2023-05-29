@@ -85,8 +85,9 @@
 
 @media (min-width:1024px){
 	#contenedor-grid{
+		
 		grid-template-columns: 50vw 25vw 25vw;
-		grid-template-rows: 16vh 75vh 75vh 10vh;
+		grid-template-rows: 23vh 75vh 75vh 18vh;
 		grid-template-areas: 
 		"one one one" 
 		"two three four" 
@@ -102,12 +103,13 @@
 		
 		border-radius: 0px;
 		-webkit-transition: 0.5s linear;
-		transition: 1s linear
+		transition: 0.7s linear
 		
 	}
 
 	.secondaryImg:hover{
 		 border-radius: 20px;
+		 -webkit-filter: grayscale(100%);
 					 
 	}
 }
