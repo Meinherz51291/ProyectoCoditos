@@ -3,7 +3,7 @@ header{
 	align-items: center;
     background-color: rgb(155, 200, 206);
     overflow: hidden;
-    justify-content: start;
+    justify-content: space-around;
     
 }
 

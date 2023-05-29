@@ -112,6 +112,7 @@
 	}
 
 	.secondaryImg:hover{
+		
 		 border-radius: 20px;
 		 -webkit-filter: grayscale(100%);
 	}

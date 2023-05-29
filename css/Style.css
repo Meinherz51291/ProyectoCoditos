@@ -25,15 +25,26 @@ body {
     grid-gap: 3px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
-        grid-template-areas:
+    grid-template-areas:
                              "principalNews principalNews news4"
                              "principalNews principalNews news5"
                              "news1 news2 news3"
-                             "news1 news2 news3"}
+                             "news1 news2 news3"
+    }
+    .secondaryImg{
+		
+		border-radius: 0px;
+		transition: 0.7s linear
+		
+	}
 
+	.secondaryImg:hover{
+		 border-radius: 20px;
+		 -webkit-filter: grayscale(100%);
+	}
 
 p {
-    margin: 1em;
+    margin: 1.3em;
 }
 
 h2{
@@ -69,6 +80,7 @@ a hover{
     text-align: center;
     border-style:groove;
     background: #8d8787ab;
+    
 }
 
 .news1 img{
@@ -136,9 +148,6 @@ a hover{
     margin:auto;
 }
 
-.footer {
-    background-color:  rgb(155, 200, 206);
-}
 
 @media  (min-width:600px) and (max-width:768px){
     .grid {
@@ -164,6 +173,8 @@ a hover{
         text-align: center;
     }
 
+  
+
 }
 
 @media  (min-width:320px) and (max-width:480px) {
@@ -186,4 +197,6 @@ a hover{
         height: 75%;
         width: 75%;
     }
+  
+
 }
