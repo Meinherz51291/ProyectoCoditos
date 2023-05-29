@@ -8,13 +8,31 @@
 	overflow-x: hidden;
 }
 
+body {
+    /* Fondo con un patrón de gradiente */
+    /* Define varios fondos que se superponen */
+    /* Los fondos incluyen gradientes radiales y lineales */
+    background: radial-gradient(rgba(0, 0, 0, 0.435) 3px, transparent 4px), radial-gradient(rgba(0, 0, 0, 0.458) 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+    
+    /* Define los tamaños de fondo para cada uno de los fondos */
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    
+    /* Define las posiciones de fondo para cada uno de los fondos */
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    
+    /* Establece el color de texto */
+    color: #000000;
+    
+  
+}
+
 .grid {
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 26.6vw 26.6vw 26.6vw;
-    grid-template-rows: 93vh 53vh 70vh 40vh;
+    grid-template-rows: 60vh 53vh 70vh 40vh;
     width: 80%;
     margin: 0 auto;
         grid-template-areas:
@@ -34,7 +52,7 @@ h2{
 }
 
 a hover{
-    color:blue;
+    color:rgb(89, 89, 89);
 }
 
 .newsPrincipal {
@@ -44,6 +62,7 @@ a hover{
     align-items: center;
     text-align: center;
     border-style:groove;
+    background-color: #a4a4a4;
 }
 
 .newsPrincipal img {
@@ -59,6 +78,7 @@ a hover{
     align-items: center;
     text-align: center;
     border-style:groove;
+    background: #8d8787ab;
 }
 
 .news1 img{
@@ -74,6 +94,7 @@ a hover{
     align-items: center;
     text-align: center;
     border-style:groove;
+    background: #8d8787ab;
 }
 
 .news2 img {
@@ -89,6 +110,7 @@ a hover{
     align-items: center;
     text-align: center;
     border-style:groove;
+    background: #8d8787ab;
 }
 
 .news3 img {
@@ -102,6 +124,7 @@ a hover{
     margin-top: 0.2em;
     align-items: center;
     text-align: center;
+  
 }
 
 .news4 img {
@@ -114,6 +137,7 @@ a hover{
     grid-area: news5;
     align-items: center;
     text-align: center;
+
 }
 
 .news5 img {
@@ -123,7 +147,7 @@ a hover{
 }
 
 .footer {
-    background-color: rgb(57, 170, 183);
+    background-color:  rgb(155, 200, 206);
 }
 
 @media all and (min-width:600px) and (max-width:1023px){
@@ -207,7 +231,7 @@ a hover{
         grid-gap: 1px;
         grid-template-columns: repeat(2, 50vw);
         grid-template-rows: repeat(5, 1fr);
-        grid-template-rows: 90vh 25vh 45vh 40vh 60vh;
+        grid-template-rows: 70vh 25vh 45vh 40vh 60vh;
         width: 100%;
             grid-template-areas:
                                  "principalNews principalNews" 
