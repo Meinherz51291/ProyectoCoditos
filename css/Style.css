@@ -14,7 +14,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 26.6vw 26.6vw 26.6vw;
-    grid-template-rows: 93vh 53vh 70vh 40vh;
+    grid-template-rows: 53vh 53vh 70vh 40vh;
     width: 80%;
     margin: 0 auto;
         grid-template-areas:
