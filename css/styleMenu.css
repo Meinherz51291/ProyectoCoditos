@@ -1,0 +1,57 @@
+header{
+	display: flex;
+	align-items: center;
+    background-color: rgb(57, 170, 183);
+    overflow: hidden;
+    justify-content: start;
+    
+}
+
+#logo {
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+
+header nav ul {
+	display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    
+    
+}
+
+header nav ul li{
+    margin-top: 70px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    
+}		
+
+header nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.5em;
+    color:rgb(62, 62, 62);
+
+
+}
+
+header nav ul li :hover {
+    color: rgba(176, 97, 250, 0.776);
+    transition: 0.5s;
+}
+
+.linkNews {
+    text-decoration: none;
+    color:rgb(1, 1, 1);
+}
+
+.linkNews :hover {
+    color: blue;
+}

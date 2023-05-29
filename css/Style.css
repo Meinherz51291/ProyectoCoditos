@@ -8,93 +8,262 @@
 	overflow-x: hidden;
 }
 
-#contenedor-grid{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(5, 20vh);
-	grid-template-areas: 
-	"one"
-	"two" 
-	"three" 
-	"four" 
-	"five"
-    "six";
+.grid {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 26.6vw 26.6vw 26.6vw;
+    grid-template-rows: 93vh 53vh 70vh 40vh;
+    width: 80%;
+    margin: 0 auto;
+        grid-template-areas:
+                             "principalNews principalNews news4"
+                             "principalNews principalNews news5"
+                             "news1 news2 news3"
+                             "news1 news2 news3"      
 }
 
-.one{
-	background-color: rgb(133, 164, 255);
-	grid-area: one;
+p {
+    margin: 1em;
 }
 
-.two{
-	background-color: grey;
-	grid-area: two;
+h2{
+    margin-right:0.5em;
+    margin-left:0.5em;
 }
 
-.three{
-	background-color: rgb(84, 68, 166);
-	grid-area: three;
+a hover{
+    color:blue;
 }
 
-.four{
-	background-color: rgb(112, 114, 216);
-	grid-area: four;
+.newsPrincipal {
+    color: #000;
+    grid-area: principalNews;
+    margin-top: 0.2em;
+    align-items: center;
+    text-align: center;
+    border-style:groove;
 }
 
-.five{
-	background-color: rgb(20, 141, 255);
-	grid-area: five;
+.newsPrincipal img {
+    width: 100%;
+    height: 60%;
 }
 
-.six{
-	background-color: rgb(43, 20, 255);
-	grid-area: six;
+.news1 {
+    color: #000;
+    border: none;
+    grid-area: news1;
+    margin-bottom: 0.2em;
+    align-items: center;
+    text-align: center;
+    border-style:groove;
 }
 
-.seven{
-	background-color: rgb(140, 130, 233);
-	grid-area: seven;
+.news1 img{
+    width: 100%;
+    height: 50%;
 }
 
-header{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.news2 {
+    color: #000;
+    border: none;
+    grid-area: news2;
+    margin-bottom: 0.2em;
+    align-items: center;
+    text-align: center;
+    border-style:groove;
 }
 
-	header ul{
-		display: flex;
-	}
-		header ul li{
-			margin-right: 10px;
-		}		
+.news2 img {
+    width: 100%;
+    height: 40%;
+}
 
-		header ul li a{
-			color: deeppink;
-			text-decoration: none;
-			font-size: 1.1em;
-		}
+.news3 {
+    color: #000;
+    border: none;
+    grid-area: news3;
+    margin-bottom: 0.2em;
+    align-items: center;
+    text-align: center;
+    border-style:groove;
+}
 
-header img{
-	width: 230px;
-	margin-top: 20px;
+.news3 img {
+    width: 100%;
+    height: 40%;
 }
 
 
+.news4 {
+    grid-area: news4;
+    margin-top: 0.2em;
+    align-items: center;
+    text-align: center;
+}
+
+.news4 img {
+    width: 90%;
+    height: 90%;
+    margin:auto;
+}
+
+.news5 {
+    grid-area: news5;
+    align-items: center;
+    text-align: center;
+}
+
+.news5 img {
+    width: 90%;
+    height: 90%;
+    margin:auto;
+}
+
+.footer {
+    background-color: rgb(57, 170, 183);
+}
+
+@media all and (min-width:600px) and (max-width:1023px){
+    .grid {
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 35vh 55vh 55vh 70vh 60vh;
+        width: 100%;
+        margin: 0 auto;
+            grid-template-areas:
+                                 "news4 news5"
+                                 "principalNews principalNews"
+                                 "principalNews principalNews"
+                                 "news1 news2"
+                                 "news3 news3"      
+    }
+
+    .news4 {
+        grid-area: news4;
+        margin-top: 0.2em;
+    }
+
+    .news4 img {
+        height: 97%;
+        width: 97%;
+    }
+
+    .news5 {
+        grid-area: news5;
+        margin-top: 0.2em;
+    }
+
+    .news5 img {
+        height: 97%;
+        width: 97%;
+    }
+
+    .newsPrincipal {
+        grid-area: principalNews;
+        margin-top: 0em;
+    }
+
+    .news1 {
+        color: #000;
+        border: none;
+        grid-area: news1;
+        margin-bottom: 0em;
+        border-style:groove;
+    
+    }
+    
+    .news2 {
+        color: #000;
+        border: none;
+        grid-area: news2;
+        margin-bottom: 0em;
+        border-style:groove;
+
+}
+
+    .news3 {
+        color: #000;
+        border: none;
+        grid-area: news3;
+        margin-bottom: 0em;
+        border-style:groove;
+    }
+
+    .news3 img {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media all and (max-width: 599px) {
+    .grid {
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: repeat(2, 50vw);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: 90vh 25vh 45vh 40vh 60vh;
+        width: 100%;
+            grid-template-areas:
+                                 "principalNews principalNews" 
+                                 "news4 news5"
+                                 "news1 news1"
+                                 "news2 news2"
+                                 "news3 news3"    
+    }
+
+    .newsPrincipal h1 {
+        margin-top: 0.1em;
+        margin-bottom: 0em;
+    }
+    
+    .newsPrincipal p {
+        margin-bottom: 0.2em;
+    }
+    
+
+    .news4 {
+        grid-area: news4;
+        margin-top: 1em;
+    }
+
+    .news5 {
+        grid-area: news5;
+        margin-top: 1em;
+    }
 
 
-@media (min-width:1024px){
-	#contenedor-grid{
-		grid-template-columns: 50vw 25vw 25vw;
-		grid-template-rows: 40vh 50vh 30vh;
-		grid-template-areas: 
-		"one one one" 
-		"two three four" 
-		"two five six"
-        "seven seven seven";
-	}
+    .news1 {
+        color: #000;
+        border: none;
+        grid-area: news1;
+        margin-bottom: 0em;
+        border-style:groove;
+    }
 
-	header ul{
-		display: none;
-	}
+    .news2 {
+        color: #000;
+        border: none;
+        grid-area: news2;
+        margin-bottom: 0em;
+        border-style:groove;
+    }
+    
+    .news3 {
+        color: #000;
+        border: none;
+        grid-area: news3;
+        margin-bottom: 0.2em;
+       border-style:groove;
+    }
+
+    #imgPrincipal {
+        height: 75%;
+        width: 75%;
+    }
 }
