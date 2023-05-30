@@ -200,3 +200,40 @@ a hover{
   
 
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .grid {
+      display: grid;
+      grid-gap: 1px;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas:
+        "principalNews principalNews"
+        "principalNews principalNews"
+        "news4 news5"
+        "news1 news2"
+        "news3 news3";
+      /* Estilos adicionales para el modo de pantalla pequeña de escritorio */
+      /* Ajusta los estilos según tus necesidades */
+    }
+    
+    .news3 {
+      color: #000;
+      border: none;
+      grid-area: news3;
+      margin-bottom: 0em;
+      border-style: groove;
+      text-align: center;
+      /* Estilos adicionales para el modo de pantalla pequeña de escritorio */
+      /* Ajusta los estilos según tus necesidades */
+    }
+  
+    #imgPrincipal {
+      height: 75%;
+      width: 75%;
+      /* Estilos adicionales para el modo de pantalla pequeña de escritorio */
+      /* Ajusta los estilos según tus necesidades */
+    }
+  }
+  
+

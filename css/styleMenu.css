@@ -58,3 +58,51 @@ header nav ul li :hover {
     color: rgb(65, 65, 76);
     transition: 0.7s;
 }
+
+/* Media Query para pantallas de ancho entre 600px y 768px */
+@media (min-width: 600px) and (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  header nav ul li {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Media Query para pantallas de ancho entre 320px y 480px */
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #logo {
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+  }
+
+  header nav ul li a {
+    font-size: 1.2em; /* Ajusta el tamaño de la fuente según tus preferencias */
+  }
+}

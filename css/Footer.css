@@ -31,5 +31,53 @@ p {
   .footer-info {
     text-align: right;
   }
+
+/* Media Query para pantallas de ancho entre 481px y 768px (modo tableta) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-info {
+    margin-top: 10px;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  p {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+}
+
+/* Media Query para pantallas de ancho hasta 480px (modo teléfono) */
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-info {
+    margin-top: 10px;
+  }
+  
+  .footer-logo img {
+    width: 80px;
+    height: auto;
+  }
+  
+  p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+}
+
+
   
  
